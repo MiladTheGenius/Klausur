@@ -1,18 +1,17 @@
 public class BlueRay extends Medien {
 
-    String info; 
+    boolean dreiD; 
 
-    public BlueRay(String titel, int fsk, String länge, String info) {
+    public BlueRay(String titel, int fsk, String länge, boolean dreiD) {
         super(titel, fsk, länge);
-        setInfo(info);
-    }
-    
-    public void setInfo(String info) {
-        this.info = info;
+        setDreiD(dreiD);;
     }
 
-    public String getInfo() {
-        return info;
+    public void setDreiD(boolean dreiD) {
+        this.dreiD = dreiD;
     }
     
+    public boolean getDreiD() {
+        return dreiD;
+    }
 }
